@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Friday</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom Css -->
+    <style>
+      /* Font Family */
+      @font-face {
+        font-family: FuturaFuturisC;
+        src: url(/images/FuturaFuturisC.otf);
+      }
+
+      @font-face {
+        font-family: Arial;
+        src: url(/images/arial.ttf);
+      }
+
+      @font-face {
+        font-family: Helvetica;
+        src: url(/images/Helvetica.ttf);
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+
+      :root {
+        --heading-1: 14px;
+        --heading-2: 15px;
+        --heading-3: 12px;
+        --heading-4: 11.5px;
+        --heading-5: 10px;
+      }
+
+      body {
+        font-family: var(--font-arial);
+        box-sizing: border-box;
+        overflow-x: hidden !important;
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        color: var(--text-dark);
+        margin: 0px;
+      }
+      p {
+        margin: unset;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+      }
+      /* Navbar Logo */
+
+      .navbar {
+        padding: 21px 80px;
+      }
+
+      .navbar img {
+        width: 176px;
+        height: 30px;
+      }
+
+      /* banner start */
+      .banner {
+        background-image: url("images/banner-3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+      }
+      .banner-content {
+        margin: 40px 15px 20px 15px;
+      }
+      .banner h2 {
+        color: #fff;
+        font-family: Arial;
+        font-size: 21.333px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .banner h1 {
+        color: #fff;
+        font-family: Arial;
+        font-size: 39.012px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: #c8637d;
+        border-radius: 10px;
+        padding: 6px;
+        width: 85%;
+        margin: 7px 0px 0px 0px;
+      }
+      .banner p {
+        margin-top: 10px;
+        color: #73ccf2;
+        font-family: Arial;
+        font-size: 20.489px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 70%;
+        z-index: 100;
+      }
+
+      .banner-img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+      .bnr-img-left {
+        width: 280px;
+        position: absolute;
+        left: -10px;
+        bottom: 0;
+        z-index: 5;
+      }
+      .bnr-img-right {
+        width: 215px;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        z-index: 2;
+      }
+
+      /* banner close */
+
+      /* section two start */
+
+      .inner-section-two {
+        padding: 30px 30px;
+      }
+      .inner-section-two p {
+        color: var(--Text, #393e44);
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+      }
+      .inner-section-two p span {
+        color: #c8637d;
+        font-weight: 600;
+      }
+      .inner-section-two p b {
+        font-weight: 700 !important;
+      }
+      .inner-section-two h5 {
+        margin-top: 10px;
+        color: var(--White, #fff);
+        text-align: center;
+        font-family: Arial;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 10px;
+        background: linear-gradient(148deg, #2c2e30 -30.79%, #121313 58.52%),
+          #2c2f33;
+        padding: 10px;
+      }
+      .inner-section-two h5 span {
+        color: var(--Blue-text, #429dc3);
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      /* section two close */
+
+      /* section 3 start */
+      .section-3 {
+        background-image: url("images/section-3-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 215px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .section-3-content {
+        text-align: center;
+      }
+      .section-3-content p {
+        line-height: 100%;
+      }
+      .section-3-content a {
+        text-decoration: underline;
+        color: unset;
+      }
+      .section-3-content span:first-child {
+        color: var(--Pink-2, #c8637d);
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+      }
+      .section-3-content span:last-child {
+        color: var(--Text, #393e44);
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+      }
+      /* section 3 close */
+
+      /* section 4 start */
+      .section-4-content h2.title {
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Arial;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .box-area {
+        padding: 0px 10px;
+      }
+      .box {
+        max-width: 380px;
+        min-height: 200px;
+        overflow: hidden;
+        border-radius: 12px;
+        padding: 7%;
+        margin: 20px auto;
+        position: relative;
+      }
+      .box-2,
+      .box-4 {
+        border: 1.5px solid #429dc3;
+      }
+      .box-1,
+      .box-3,
+      .box-5 {
+        border: 1.5px solid #c8637d;
+      }
+      .box .inner-box {
+        width: 100%;
+      }
+      .box .inner-box .box-head {
+        display: flex;
+      }
+      .box .inner-box .box-head .box-head-left {
+        width: 22%;
+      }
+      .box .inner-box .box-head .box-head-left img {
+        width: 38px;
+      }
+
+      .box .box-head-right {
+        width: 100% !important;
+      }
+      .box .inner-box .box-head .box-head-right p {
+        color: var(--dark-text, #2c2f33);
+        font-family: Helvetica;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 5px;
+      }
+      .box .inner-box .box-head .box-head-right h4 {
+        color: var(--Pink-2, #c8637d);
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.32px;
+      }
+
+      .box-body {
+        margin-top: 5px;
+      }
+      .box-body .list-area h6.list-title {
+        color: var(--Text, #393e44);
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .list-area ul {
+        padding: 0px;
+      }
+      .list-area ul li {
+        list-style: none;
+        display: flex;
+        margin: 7px 0px;
+      }
+      .list-area ul li img {
+        width: 20px;
+        height: 20px;
+      }
+      .list-area ul li p {
+        color: var(--Text, #393e44);
+        font-family: Helvetica;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 2px 0px 2px 5px;
+      }
+      .list-area ul li p b {
+        text-decoration: line-through;
+      }
+      .list-area ul li p span {
+        color: var(--Pink-2, #c8637d);
+        font-family: Helvetica;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .price-area {
+        position: absolute;
+        right: 5%;
+        bottom: 7%;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background: #c8637d;
+      }
+      .price-area .inner-price h2 {
+        color: #fff;
+        font-family: Arial;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+      }
+      .price-area .inner-price h2 sub {
+        font-size: 10px;
+      }
+      .price-area span {
+        height: 2px;
+        color: 000;
+        width: 60%;
+        background: #323232;
+        position: absolute;
+        transform: rotate(-40deg);
+      }
+      .box-3 b,
+      .box-4 b,
+      .box-5 b {
+        text-decoration: none !important;
+      }
+      .box-1 {
+        background-image: url("images/box1-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box-2 {
+        background-image: url("images/box-2-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box-2 .box-head-right h4 {
+        color: #429dc3 !important;
+      }
+      .box-3 {
+        background-image: url("images/box-3-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .box-3 .box-head-right p {
+        color: var(--Text, #393e44);
+        font-family: Arial;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+      }
+      .box-3 .box-head-right p span {
+        color: #c8637d !important;
+      }
+      .box-4 {
+        background-image: url("images/box-4-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box-4 .box-head-right h4 {
+        color: #429dc3 !important;
+      }
+
+      .box-5 {
+        background-image: url("images/box-5-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box sup {
+        font-size: 12px;
+      }
+      /* section 4 close */
+
+      /* section 5 start */
+      .section-5-content {
+        padding: 10px 20px;
+      }
+      .section-5-content h4 {
+        color: var(--Blue-text, #429dc3);
+        text-align: center;
+        font-family: Arial;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .section-5-content h4 .arrow {
+        padding: 2px 6px;
+        background: linear-gradient(#b2b2b2, rgba(0, 60, 110, 0.776));
+        border-radius: 5px;
+        color: #fff !important;
+      }
+      .section-5-content p {
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 15px;
+      }
+      .section-5-content p span {
+        color: var(--Blue-text, #429dc3);
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .section-5-content p:last-child {
+        margin: 5px 0px 0px 0px;
+        color: var(--Text, #393e44);
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+      }
+      /* section 5 close */
+
+      /* section 6 start */
+      .section-6 {
+        background-image: url("images/section-6-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 280px;
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+      }
+      .section-6-content {
+        width: 100%;
+        text-align: center;
+      }
+      .section-6-content h2 {
+        color: var(--White, #fff);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3em;
+        margin-bottom: 15px;
+      }
+      .section-6-content .btn {
+        margin-top: 10px;
+        padding: 6px 20px;
+        border-radius: 4px;
+        background: #429dc3;
+        color: #fff;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px; /* 95.833% */
+      }
+      .section-6-content h2 span {
+        color: #df8ca1;
+      }
+      /* section 6 close */
+
+      /* section 7 start */
+      .section-7 {
+        margin-top: -20px;
+        text-align: center;
+      }
+      .section-7-content .btn-1 {
+        padding: 18.09px 34.789px;
+        width: 90%;
+        border-radius: 5.069px;
+        background: #c8637d;
+        color: #fff;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .section-7-content p.p-1 {
+        margin: 50px 0px 0px;
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .section-7-content span {
+        color: #c8637d;
+      }
+      .section-7-content b {
+        font-weight: 700;
+      }
+
+      .image-box {
+        margin: 100px auto 30px;
+        max-width: 380px;
+        height: 243px;
+        border-radius: 10px;
+        background: var(--Pink-50, #fcf1f6);
+        text-align: center;
+      }
+      .image-box .image-box-img {
+        display: flex;
+        justify-content: center;
+      }
+      .image-box .image-box-img img {
+        width: 166px;
+        height: 206.26px;
+        margin: -100px 0px 0px;
+      }
+      .image-box-title {
+        color: var(--Text, #393e44);
+        font-family: Helvetica;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      .image-box-desc {
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .image-box-desc span {
+        color: var(--Pink-2, #c8637d);
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .image-box-desc b {
+        font-weight: 700;
+      }
+      .section-7-content h2 {
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 31.2px */
+        text-transform: uppercase;
+      }
+      .section-7-content h2 .btn-2 {
+        background: #429dc3;
+        font-family: Helvetica;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 5px 10px;
+        color: #fff !important;
+        font-size: 24px;
+      }
+      /* section 7 close */
+
+      /* section 8 start */
+      .section-8 {
+        margin: 20px auto;
+        background-image: url("images/section-8-bg.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 40px 0px 40px;
+      }
+      .section-8-head p {
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .section-8-head p b {
+        font-weight: 700;
+      }
+      .section-8-head p span {
+        color: #429dc3;
+      }
+      .after-before-img {
+        width: 85%;
+        margin: 20px auto 0px;
+      }
+      /* section 8 close */
+
+      /* section 9 start */
+      .section-9-content {
+        text-align: center;
+      }
+      .section-9-content h3 {
+        color: var(--Blue-text, #429dc3);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .section-9-content p {
+        color: var(--Text, #393e44);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .section-9-content p b {
+        font-weight: 700;
+      }
+      .section-9-content span {
+        color: #c8637d;
+      }
+      .section-9-content img {
+        width: 70%;
+        margin: 10px auto 20px !important;
+      }
+      /* section 9 close */
+
+      /* -----------------Section Nine Start----------------- */
+
+      .section-nine {
+        margin-top: 1.2rem;
+        background-image: url("images/timer-bg.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .time-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+        margin-bottom: 56px;
+        margin-top: 33px !important;
+      }
+
+      .time-content .colon {
+        margin-top: -2rem;
+      }
+
+      .time-content .time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .time-content input {
+        border: none;
+        color: #fff;
+        font-size: 68px;
+        font-weight: 700;
+        letter-spacing: 13px;
+        border-radius: 7.74px;
+        background: linear-gradient(180deg, #df8ca1 0%, #ecadbd 100%),
+          linear-gradient(195deg, #429dc3 -19.23%, #acd6e9 108.23%);
+        text-align: center;
+        width: 150px;
+        height: 90px;
+      }
+
+      .time-content label {
+        font-family: Helvetica;
+        font-size: 20px;
+        color: var(--text-pink);
+        font-weight: 400;
+        margin-top: -0.3rem;
+      }
+
+      .section-nine-content {
+        text-align: center;
+      }
+      .section-nine .btn {
+        color: var(--White, #fff);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 4px;
+        background: var(--Blue-text, #429dc3);
+        padding: 10px 10px;
+        width: 60%;
+      }
+      .section-nine-content .title {
+        margin-bottom: 20px;
+      }
+      .section-nine-content .title h2 {
+        color: var(--White, #fff);
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      .section-nine-content .title h2 span {
+        color: #df8ca1;
+      }
+      .time-content {
+        column-gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 13px;
+      }
+
+      .time-content .colon {
+        margin-top: -2rem;
+        width: 3px;
+      }
+
+      .time-content input {
+        font-size: 18px;
+        width: 55px;
+        letter-spacing: 1px;
+        height: 40px;
+      }
+
+      .time-content label {
+        font-size: 12px;
+        margin-top: -18px;
+        color: #fff !important;
+      }
+
+      /* About */
+
+      .about-me {
+        margin: 30px auto;
+      }
+
+      .about-content {
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        gap: 15px;
+        padding-top: 13px;
+        border-top: 1px solid #dddddd;
+      }
+
+      .about-content .my-img {
+        width: 110px;
+        height: 110px;
+      }
+
+      .about-content .details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .about-content .details .name,
+      .about-content .details .mail {
+        font-size: 12px;
+      }
+
+      .about-content .details img {
+        width: 90.87px;
+        height: 40px;
+      }
+
+      .about-content .details .social-icon {
+        gap: 10px;
+      }
+
+      .about-content .details .social-icon svg {
+        height: 20px;
+        width: 20px;
+      }
+
+      /* Footer */
+
+      .footer {
+        padding: 10px 0;
+        background-color: #2c2f33;
+        text-align: center;
+      }
+
+      .footer .footer-logo {
+        width: 100%;
+        text-align: center;
+        height: 21.413px;
+      }
+      .footer .footer-logo img {
+        width: 140px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- ---------------------Navbar Start -------------------- -->
+      <header class="navbar">
+        <a href="https://ik.bellavladi.com/u3"><img src="images/Logo.png" /></a>
+      </header>
+      <!-- ---------------------Navbar End-------------------- -->
+
+      <!-- banner start -->
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="banner-content">
+              <h2>ТОЛЬКО В ЧЁРНУЮ ПЯТНИЦУ</h2>
+              <a href="https://ik.bellavladi.com/u3"><h1>СКИДКА 90%</h1></a>
+              <p>НА САМЫЙ ЛУЧШИЙ ПРОДУКТ В ИСТОРИИ ФЕЙСФИТНЕСА</p>
+            </div>
+          </div>
+          <div class="banner-img">
+            <img src="images/banner-left.png" alt="" class="bnr-img-left" />
+            <img src="images/banner-right.png" alt="" class="bnr-img-right" />
+          </div>
+        </div>
+      </section>
+      <!-- banner close -->
+
+      <!-- section 2 start -->
+      <section class="section-2">
+        <div class="container">
+          <div class="row">
+            <div class="inner-section-two">
+              <p>
+                ФЕЙСФИТНЕС – не только дает эффект
+                <span>равномерной подтяжки</span> лица в
+                <span>любом</span> возрасте, но и экономит огромное количество
+                денег на инъекциях и косметологах 💸
+                <br />
+                <br />
+                А что если я вам скажу, что <b>прямо сейчас</b> у вас есть
+                возможность
+                <span>начать работу над проблемными зонами</span> лица, шеи и
+                декольте с лучшим продуктом для <b>естественного омоложения</b>,
+                который благодаря
+              </p>
+
+              <a href="https://ik.bellavladi.com/u3"
+                ><h5>
+                  Чёрной пятнице дешевле  реальной стоимости в
+                  <span>10 раз!</span> 😱
+                </h5></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 2 close -->
+
+      <!-- section 3 start -->
+      <section class="section-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <div class="section-3-content">
+                <p>
+                  <span>
+                    Все это возможно с <br />
+                    Супер Комплексом <br />
+                    «FACELIFTING 100% РЕЗУЛЬТАТ», <br />
+                    где я <a href="https://ik.bellavladi.com/u3">гарантирую</a>,
+                    что
+                  </span>
+                  <br />
+                  <span>
+                    позитивный результат <br />
+                    будет у всех! 🔥
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 3 close -->
+
+      <!-- section 4 start -->
+      <section class="section-4">
+        <div class="container">
+          <div class="row">
+            <div class="section-4-content">
+              <h2 class="title">
+                Что будет входить в <br />
+                «FACELIFTING 100% РЕЗУЛЬТАТ»?
+              </h2>
+            </div>
+
+            <div class="box-area">
+              <div class="box box-1">
+                <div class="inner-box">
+                  <div class="box-head">
+                    <div class="box-head-left">
+                      <img src="images/01.png" alt="" />
+                    </div>
+                    <div class="box-head-right">
+                      <p>Курс для новичков</p>
+                      <h4>«FaceLifting START»</h4>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="list-area">
+                      <h6 class="list-title">Он состоит из:</h6>
+                      <ul>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>доступ на <b>3 месяца</b> <span>1 год</span></p>
+                        </li>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>поддержка личного куратора</p>
+                        </li>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>33 упражнения</p>
+                        </li>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>курс на 3 недели</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="https://ik.bellavladi.com/u3"
+                      ><div class="price-area">
+                        <div class="inner-price">
+                          <h2>99<sub>€</sub></h2>
+                        </div>
+                        <span></span></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- box 2 start -->
+              <div class="box box-2">
+                <div class="inner-box">
+                  <div class="box-head">
+                    <div class="box-head-left">
+                      <img src="images/02.png" alt="" />
+                    </div>
+                    <div class="box-head-right">
+                      <p>Курс для продвинутых</p>
+                      <h4>«FaceLifting FINISH»</h4>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="list-area">
+                      <h6 class="list-title">Он состоит из:</h6>
+                      <ul>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>доступ на <b>3 месяца</b> <span>1 год</span></p>
+                        </li>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>поддержка личного куратора</p>
+                        </li>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>33 упражнения</p>
+                        </li>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>
+                            результат заметен через <br />
+                            2 неделеи
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="https://ik.bellavladi.com/u3">
+                      <div class="price-area">
+                        <div class="inner-price">
+                          <h2>99<sub>€</sub></h2>
+                        </div>
+                        <span></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- box 3 start -->
+              <div class="box box-3">
+                <div class="inner-box">
+                  <div class="box-head">
+                    <div class="box-head-left">
+                      <img src="images/03.png" alt="" />
+                    </div>
+                    <div class="box-head-right">
+                      <p>
+                        2 групповые
+                        <b
+                          >встречи со мной <br />
+                          в Zoom</b
+                        >,
+                        <span
+                          >с разбором упражнений <br />
+                          и ответами на вопросы, с записью</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="list-area"></div>
+                    <a href="https://ik.bellavladi.com/u3">
+                      <div class="price-area">
+                        <div class="inner-price">
+                          <h2>150<sub>€</sub></h2>
+                        </div>
+                        <span></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- box 4 start -->
+              <div class="box box-4">
+                <div class="inner-box">
+                  <div class="box-head">
+                    <div class="box-head-left">
+                      <img src="images/04.png" alt="" />
+                    </div>
+                    <div class="box-head-right">
+                      <p>Комплекс</p>
+                      <h4>«Уход за лицом и хитрости лифтинг макияжа»</h4>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="list-area">
+                      <h6 class="list-title">Он состоит из:</h6>
+                      <ul>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>
+                            Видео-гид от профессиональных косметологов <br />
+                            <b>«Основы по уходу за лицом»</b>
+                          </p>
+                        </li>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>
+                            Видеокурс + авторский чек-лист по увлажнению<br />
+                            кожи:
+                            <b
+                              >«Как определить свой тип кожи и <br />
+                              подобрать уход» </b
+                            >
+                          </p>
+                        </li>
+                        <li>
+                          <img src="images/pink-check.png" alt="" />
+                          <p>
+                            Видеокурс <b>«Лифтинг макияж»</b> + разбор <br />
+                            косметички
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="https://ik.bellavladi.com/u3">
+                      <div class="price-area">
+                        <div class="inner-price">
+                          <h2>41<sup>97</sup><sub>€</sub></h2>
+                        </div>
+                        <span></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- box 5 start -->
+              <div class="box box-5">
+                <div class="inner-box">
+                  <div class="box-head">
+                    <div class="box-head-left">
+                      <img src="images/05.png" alt="" />
+                    </div>
+                    <div class="box-head-right">
+                      <p>Комплекс</p>
+                      <h4>
+                        «Экспресс массаж для активации роста волос, красивых
+                        скул и лифтинга лица»
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="list-area">
+                      <h6 class="list-title">Он состоит из:</h6>
+                      <ul>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>
+                            Видеокурс для укрепления и роста волос
+                            <b>«Массаж головы Шиацу»</b>
+                          </p>
+                        </li>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>
+                            Видеокурс
+                            <b
+                              >«Противоотечный <br />
+                              экспресс-массаж»</b
+                            >
+                          </p>
+                        </li>
+                        <li>
+                          <img src="images/blue-check.png" alt="" />
+                          <p>Видеокурс <b>«Массаж против бруксизма»</b></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="https://ik.bellavladi.com/u3">
+                      <div class="price-area">
+                        <div class="inner-price">
+                          <h2>41<sup>97</sup><sub>€</sub></h2>
+                        </div>
+                        <span></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 4 close -->
+
+      <!-- section 5 start -->
+      <section class="section-5">
+        <div class="container">
+          <div class="row">
+            <div class="section-5-content">
+              <h4>
+                Я не просто так указала стоимость всего что входит в <br />
+                «FACELIFTING 100% РЕЗУЛЬТАТ» <span class="arrow">⬇</span>
+              </h4>
+              <p>Все это счастье стоимостью <span>419.94€</span></p>
+              <p>(99+99+150+41.97+29.97= 419.94€)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 5 close -->
+
+      <!-- section 6 start -->
+      <section class="section-6">
+        <div class="container">
+          <div class="row">
+            <div class="section-6-content">
+              <h2>
+                В ЧЕСТЬ <br />
+                <b>ЧЕРНОЙ ПЯТНИЦЫ,</b> <br />
+                я отдаю <br />
+                <span><b>90% СКИДКОЙ</b></span> – за
+              </h2>
+              <a href="https://ik.bellavladi.com/u3" class="btn">41.99€!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 6 close -->
+
+      <!-- section 7 start -->
+      <section class="section-7">
+        <div class="container">
+          <div class="row">
+            <div class="section-7-content">
+              <a href="https://ik.bellavladi.com/u3" class="btn btn-1"
+                >УСПЕТЬ НА АКЦИЮ</a
+              >
+              <p class="p-1">
+                <b>МЫ С ВАМИ ПРОРАБОТАЕМ ВСЕ </b> <br />
+                <span><b>проблемные</b></span> зоны. <br />
+                А в конце вас будет ждать <br />
+                <b>потрясающий</b>
+                <span
+                  ><b
+                    >ЛИФТИНГ ВСЕГО <br />
+                    ЛИЦА, ШЕИ И ЗОНЫ ДЕКОЛЬТЕ!</b
+                  ></span
+                >
+              </p>
+
+              <div class="image-box">
+                <a href="https://ik.bellavladi.com/u3">
+                  <div class="inner-image-box">
+                    <div class="image-box-img">
+                      <img src="images/gift-box.png" alt="" />
+                    </div>
+                    <div class="image-box-content">
+                      <h2 class="image-box-title">И бонусом</h2>
+                      <p class="image-box-desc">
+                        <b
+                          >Улучшение роста волос, бровей <br />
+                          и ресниц,</b
+                        >
+                        а так же
+                        <span
+                          ><b>решение проблемы выпадения волос после</b></span
+                        >
+                        <br />
+                        курса массажа ШИАЦУ.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <h2>
+                И напоминаю, <br />
+                что все это всего <br />
+                за
+                <a href="https://ik.bellavladi.com/u3" class="btn btn-2"
+                  >41.99€!</a
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 7 close -->
+
+      <!-- section 8 start -->
+      <section class="section-8">
+        <div class="container">
+          <div class="row">
+            <div class="section-8-content">
+              <div class="section-8-head">
+                <p>
+                  А вот фото-доказательства <br />
+                  эффективности моих программ, к слову,<br />
+                  это результаты всего ПОСЛЕ
+                  <b
+                    >одного <br />
+                    месяца работы по курсу «FaceLifting <br />
+                    Start»</b
+                  >, а представляете, что будет после <br />
+                  <span><b>«FACELIFTING 100% РЕЗУЛЬТАТ»</b></span>
+                </p>
+              </div>
+              <div class="after-before-img">
+                <img src="images/after-before.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 8 close -->
+
+      <!-- section 9 start -->
+      <section class="section-9">
+        <div class="container">
+          <div class="row">
+            <div class="section-9-content">
+              <h3>
+                Результат я ГАРАНТИРУЮ <br />
+                при нашей совместной работе!
+              </h3>
+              <p>
+                А если улучшений ты не увидишь, <br />
+                <b>
+                  пиши в поддержку и получи не только <br />
+                  деньги назад</b
+                >, но и мои неповторимые антицеллюлитные леггинсы
+                <span><b>Modellante.</b></span> <br />
+                Уж в них то и делать ничего <br />
+                не нужно для результата 😄
+              </p>
+              <img src="images/leggings.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 9 close -->
+
+      <!-- ------------------- Section Nine Start ---------------------- -->
+
+      <section class="section-nine">
+        <div class="container">
+          <div class="section-nine-content">
+            <div class="title">
+              <h2>
+                УСПЕЙ ВОСПОЛЬЗОВАТЬСЯ <br />
+                <span
+                  >СУПЕРПРЕДЛОЖЕНИЕМ <br />
+                  ЧЕРНОЙ ПЯТНИЦЫ!</span
+                >
+              </h2>
+            </div>
+            <a href="https://ik.bellavladi.com/u3" class="btn"
+              >УСПЕТЬ НА АКЦИЮ</a
+            >
+
+            <div class="time-content">
+              <div style="display: none" id="end-date"></div>
+
+              <div class="time">
+                <input type="text" readonly value="00" />
+                <br />
+                <label for="">Дней</label>
+              </div>
+
+              <div class="colon">
+                <img src="images/email-one/colon.png" alt="" />
+              </div>
+
+              <div class="time">
+                <input type="text" readonly value="00" />
+                <br />
+                <label for="">Часов</label>
+              </div>
+
+              <div class="colon">
+                <img src="images/email-one/colon.png" alt="" />
+              </div>
+
+              <div class="time">
+                <input type="text" readonly value="00" />
+                <br />
+                <label for="">Минут</label>
+              </div>
+
+              <div class="colon">
+                <img src="images/email-one/colon.png" alt="" />
+              </div>
+
+              <div class="time">
+                <input type="text" readonly value="00" />
+                <br />
+                <label for="">Секунд</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------Section Nine End------------------- -->
+
+      <!-- ----------------------About Section Start------------------- -->
+
+      <section class="about-me">
+        <div class="container">
+          <div class="border"></div>
+
+          <div class="about-content">
+            <div class="my-img">
+              <img src="images/GIF for email footer.gif" alt="" />
+            </div>
+
+            <div class="details">
+              <h6 class="name"><b>С ❤️, команда Bella Vladi</b></h6>
+
+              <img src="images/signature.png" alt="" />
+
+              <h6 class="mail">hello@bellavladi.com</h6>
+              <h6 class="mail">ik.bellavladi.com</h6>
+
+              <div class="social-icon">
+                <a href="https://www.instagram.com/bella.vladi" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                  >
+                    <path
+                      d="M23.1592 0.00258374C24.6916 -0.00329652 26.224 0.0121046 27.756 0.0487823L28.1634 0.0634818C28.6337 0.0802812 29.0978 0.10128 29.6585 0.12648C31.8928 0.231476 33.4174 0.584264 34.755 1.10295C36.141 1.63633 37.3085 2.3587 38.4761 3.52626C39.5436 4.5754 40.3699 5.84447 40.8973 7.24524C41.416 8.58289 41.7688 10.1095 41.8738 12.3439C41.899 12.9024 41.92 13.3686 41.9368 13.839L41.9494 14.2464C41.9867 15.7777 42.0028 17.3093 41.9977 18.841L41.9998 20.4076V23.1585C42.005 24.6909 41.9889 26.2233 41.9515 27.7552L41.9389 28.1626C41.9221 28.633 41.9011 29.0971 41.8759 29.6578C41.7709 31.8921 41.4139 33.4166 40.8973 34.7543C40.3716 36.1566 39.5452 37.4267 38.4761 38.4754C37.4261 39.5428 36.1563 40.369 34.755 40.8966C33.4174 41.4153 31.8928 41.7681 29.6585 41.8731C29.0978 41.8983 28.6337 41.9193 28.1634 41.9361L27.756 41.9487C26.224 41.986 24.6916 42.0021 23.1592 41.997L21.5927 41.9991H18.8439C17.3115 42.0042 15.7791 41.9881 14.2471 41.9508L13.8397 41.9382C13.3412 41.9201 12.8428 41.8991 12.3446 41.8752C10.1103 41.7702 8.58572 41.4132 7.24596 40.8966C5.84465 40.3702 4.57535 39.5439 3.52699 38.4754C2.45822 37.426 1.63123 36.1561 1.10367 34.7543C0.584992 33.4166 0.232204 31.8921 0.127207 29.6578C0.10382 29.1595 0.0828207 28.6611 0.0642095 28.1626L0.0537101 27.7552C0.0149949 26.2233 -0.00250636 24.6909 0.00121166 23.1585V18.841C-0.00464917 17.3094 0.0107519 15.7777 0.0474102 14.2464L0.0621097 13.839C0.0789091 13.3686 0.0999083 12.9024 0.125107 12.3439C0.230104 10.1074 0.582892 8.58499 1.10157 7.24524C1.62944 5.84379 2.45805 4.57506 3.52909 3.52836C4.57673 2.45898 5.84523 1.63123 7.24596 1.10295C8.58572 0.584264 10.1082 0.231476 12.3446 0.12648L13.8397 0.0634818L14.2471 0.0529824C15.7784 0.0142866 17.3101 -0.00321468 18.8418 0.000483966L23.1592 0.00258374ZM21.0005 10.5022C19.6093 10.4826 18.2281 10.7396 16.9371 11.2583C15.6461 11.7771 14.4711 12.5473 13.4803 13.5241C12.4896 14.501 11.7029 15.665 11.1659 16.9485C10.6289 18.232 10.3524 19.6095 10.3524 21.0008C10.3524 22.3921 10.6289 23.7696 11.1659 25.0531C11.7029 26.3367 12.4896 27.5007 13.4803 28.4775C14.4711 29.4543 15.6461 30.2245 16.9371 30.7433C18.2281 31.2621 19.6093 31.5191 21.0005 31.4994C23.7852 31.4994 26.4558 30.3932 28.4249 28.4241C30.3939 26.4551 31.5001 23.7844 31.5001 20.9998C31.5001 18.2151 30.3939 15.5445 28.4249 13.5754C26.4558 11.6063 23.7852 10.5022 21.0005 10.5022ZM21.0005 14.7021C21.8373 14.6867 22.6689 14.8382 23.4465 15.1477C24.2241 15.4573 24.9323 15.9187 25.5296 16.505C26.1269 17.0913 26.6014 17.7907 26.9253 18.5625C27.2493 19.3342 27.4162 20.1628 27.4163 20.9998C27.4165 21.8367 27.2498 22.6653 26.9261 23.4372C26.6024 24.209 26.1282 24.9087 25.5311 25.4952C24.934 26.0817 24.226 26.5433 23.4484 26.8531C22.6709 27.1629 21.8394 27.3147 21.0026 27.2996C19.3318 27.2996 17.7294 26.6358 16.548 25.4544C15.3665 24.273 14.7028 22.6706 14.7028 20.9998C14.7028 19.329 15.3665 17.7266 16.548 16.5451C17.7294 15.3637 19.3318 14.7 21.0026 14.7L21.0005 14.7021ZM32.0251 7.35233C31.3477 7.37945 30.707 7.66764 30.2373 8.15655C29.7675 8.64545 29.5052 9.29715 29.5052 9.97514C29.5052 10.6531 29.7675 11.3048 30.2373 11.7937C30.707 12.2826 31.3477 12.5708 32.0251 12.598C32.7213 12.598 33.389 12.3214 33.8812 11.8291C34.3735 11.3369 34.65 10.6692 34.65 9.97304C34.65 9.27688 34.3735 8.60922 33.8812 8.11695C33.389 7.62469 32.7213 7.34813 32.0251 7.34813V7.35233Z"
+                      fill="#DF8CA1"
+                    />
+                  </svg>
+                </a>
+
+                <a href="https://t.me/+wOPMIGjmwCw1ZTM0" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 45 45"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.5 0C10.08 0 0 10.08 0 22.5C0 34.92 10.08 45 22.5 45C34.92 45 45 34.92 45 22.5C45 10.08 34.92 0 22.5 0ZM32.94 15.3C32.6025 18.855 31.14 27.495 30.3975 31.4775C30.0825 33.165 29.4525 33.7275 28.8675 33.795C27.5625 33.9075 26.5725 32.94 25.3125 32.1075C23.3325 30.8025 22.2075 29.9925 20.295 28.7325C18.0675 27.27 19.5075 26.46 20.79 25.155C21.1275 24.8175 26.8875 19.575 27 19.1025C27.0156 19.0309 27.0135 18.9566 26.9939 18.8861C26.9743 18.8155 26.9378 18.7508 26.8875 18.6975C26.7525 18.585 26.5725 18.63 26.415 18.6525C26.2125 18.6975 23.0625 20.79 16.92 24.93C16.02 25.5375 15.21 25.8525 14.49 25.83C13.68 25.8075 12.15 25.38 11.0025 24.9975C9.585 24.5475 8.4825 24.3 8.5725 23.5125C8.6175 23.1075 9.18 22.7025 10.2375 22.275C16.8075 19.4175 21.1725 17.5275 23.355 16.6275C29.61 14.0175 30.8925 13.5675 31.7475 13.5675C31.9275 13.5675 32.355 13.6125 32.625 13.8375C32.85 14.0175 32.9175 14.265 32.94 14.445C32.9175 14.58 32.9625 14.985 32.94 15.3Z"
+                      fill="#73CCF2"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://api.whatsapp.com/send/?phone=79585821885"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="45"
+                    viewBox="0 0 45 45"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.5 0C34.9268 0 45 10.0732 45 22.5C45 34.9267 34.9268 45 22.5 45C18.5238 45.0064 14.6175 43.9541 11.1825 41.9512L0.00903165 45L3.05103 33.822C1.04649 30.3859 -0.00661134 26.478 3.12305e-05 22.5C3.12305e-05 10.0732 10.0733 0 22.5 0ZM14.832 11.925L14.382 11.943C14.0907 11.9607 13.806 12.0373 13.545 12.168C13.3009 12.3062 13.0781 12.479 12.8835 12.681C12.6135 12.9352 12.4605 13.1557 12.2963 13.3695C11.464 14.4515 11.016 15.7799 11.0228 17.145C11.0273 18.2475 11.3153 19.3207 11.7653 20.3242C12.6855 22.3537 14.1998 24.5025 16.1978 26.4937C16.6793 26.973 17.1518 27.4545 17.6603 27.9022C20.1429 30.088 23.1013 31.6643 26.3003 32.5057L27.5783 32.7015C27.9945 32.724 28.4108 32.6925 28.8293 32.6722C29.4845 32.6384 30.1244 32.461 30.7035 32.1525C30.9982 32.0007 31.2857 31.8355 31.5653 31.6575C31.5653 31.6575 31.662 31.5945 31.8465 31.455C32.1503 31.23 32.337 31.0702 32.589 30.807C32.7758 30.6135 32.9378 30.3862 33.0615 30.1275C33.237 29.7607 33.4125 29.061 33.4845 28.4782C33.5385 28.0327 33.5228 27.7897 33.516 27.639C33.507 27.3982 33.3068 27.1485 33.0885 27.0427L31.779 26.4555C31.779 26.4555 29.8215 25.6027 28.6245 25.0582C28.4993 25.0035 28.365 24.9723 28.2285 24.966C28.0746 24.9502 27.919 24.9675 27.7723 25.0168C27.6256 25.0661 27.4912 25.1462 27.378 25.2517C27.3668 25.2472 27.216 25.3755 25.5893 27.3465C25.4959 27.4719 25.3673 27.5668 25.2198 27.6189C25.0724 27.6709 24.9127 27.678 24.7613 27.639C24.6147 27.5997 24.4711 27.5501 24.3315 27.4905C24.0525 27.3735 23.9558 27.3285 23.7645 27.2475C22.4732 26.684 21.2776 25.9226 20.2208 24.9907C19.9373 24.7432 19.674 24.4732 19.404 24.2122C18.5188 23.3645 17.7474 22.4055 17.109 21.3592L16.9763 21.1455C16.8809 21.0019 16.8038 20.8469 16.7468 20.6842C16.6613 20.3535 16.884 20.088 16.884 20.088C16.884 20.088 17.4308 19.4895 17.685 19.1655C17.9325 18.8505 18.1418 18.5445 18.2768 18.3262C18.5423 17.8987 18.6255 17.46 18.486 17.1202C17.856 15.5812 17.2035 14.049 16.533 12.528C16.4003 12.2265 16.0065 12.0105 15.6488 11.9677C15.5273 11.9542 15.4058 11.9407 15.2843 11.9317C14.9821 11.9167 14.6793 11.9197 14.3775 11.9407L14.8298 11.9227L14.832 11.925Z"
+                      fill="#27AE60"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------About Section End------------------- -->
+
+      <!-- ----------------------Footer Start------------------- -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-logo">
+            <img src="images/footer-img.png" alt="" />
+          </div>
+        </div>
+      </footer>
+      <footer>
+        <div class="container">
+          <span
+            style="
+              text-align: center;
+              display: block;
+              font-size: 12px;
+              padding: 14px 0px;
+              color: #878787;
+            "
+            >Это сообщение было отправлено от Bella Vladi на {{email}}. <br />
+            BV MEDIA CORPORATION S.R.L. | 1 Decembrie Str. 94-1, Timisoara,
+            300566, RO
+            <a
+              href="https://mailganer.com/templates/10390/%7B%7BunsubscribeUrl%7D%7D"
+              style="color: inherit; text-decoration: underline"
+              target="_blank"
+              >Отказаться от подписки
+            </a>
+            |
+            <a
+              href="https://mailganer.com/templates/10390/%7B%7BunsubscribeUrlSpam%7D%7D"
+              style="color: inherit; text-decoration: underline"
+              target="_blank"
+            >
+              Это спам</a
+            ></span
+          >
+        </div>
+      </footer>
+
+      <!-- ----------------------Footer End------------------- -->
+    </main>
+
+    <!-- JS File -->
+    <script>
+      // Here You Can Set/Edit Your Offer/Discount/Upcomming Time
+      const endDate = "25 November 2023 08:20:00 PM";
+
+      document.getElementById("end-date").innerText = endDate;
+      const inputs = document.querySelectorAll("input");
+      // const clock = () => {
+
+      // }
+
+      function clock() {
+        const end = new Date(endDate);
+        const now = new Date();
+        const diff = (end - now) / 1000;
+
+        if (diff < 0) return;
+
+        // convert into days;
+        inputs[0].value = Math.floor(diff / 3600 / 24);
+        if (inputs[0].value < 10) {
+          inputs[0].value = "0" + Math.floor(diff / 3600 / 24);
+        }
+        inputs[1].value = Math.floor(diff / 3600) % 24;
+        if (inputs[1].value < 10) {
+          inputs[1].value = "0" + (Math.floor(diff / 3600) % 24);
+        }
+        inputs[2].value = Math.floor(diff / 60) % 60;
+        if (inputs[2].value < 10) {
+          inputs[2].value = "0" + (Math.floor(diff / 60) % 60);
+        }
+        inputs[3].value = Math.floor(diff) % 60;
+        if (inputs[3].value < 10) {
+          inputs[3].value = "0" + (Math.floor(diff) % 60);
+        }
+      }
+
+      // initial call
+      clock();
+
+      /**
+       *  1 day = 24 hrs
+       *  1 hr = 60 mins
+       *  60 min = 3600 sec
+       */
+
+      setInterval(() => {
+        clock();
+      }, 1000);
+    </script>
+  </body>
+</html>
